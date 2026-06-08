@@ -91,13 +91,14 @@ export default function Gallery() {
             </p>
           </div>
 
-          {/* Celebration - Landscape (3:2) */}
+         {/* Celebration - Landscape (3:2) */}
           <div className="md:col-span-7 group cursor-pointer">
             <div className="w-full aspect-[3/2] overflow-hidden shadow-xl bg-white/60 p-2 backdrop-blur-sm">
               <img 
                 src="/images/gallery-6.jpg" 
                 alt="An Evening Of Celebration" 
-                className="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-[1.03]"
+                {/* CHANGED: object-center is now object-top */}
+                className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-[1.03]"
               />
             </div>
             <p className="mt-4 text-center text-sm md:text-base font-body italic text-gold">
