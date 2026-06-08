@@ -6,10 +6,12 @@ import Gallery from './components/Gallery';
 import RSVP from './components/RSVP';
 import ScratchNote from './components/ScratchNote';
 import Footer from './components/Footer';
+import AudioPlayer from './components/AudioPlayer';
 
 function App() {
   return (
     <main className="w-full min-h-screen bg-paper">
+      <AudioPlayer />
       <Cover />
       <EditorialQuote />
       <Story />
